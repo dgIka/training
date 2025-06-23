@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b105d5c-22b5-48f0-8973-d40b2a7e13dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/ColorTextServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/ServletTestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/CalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javarush/servlets/ColorTextServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/ColorTextServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +60,7 @@
   &quot;keyToString&quot;: {
     &quot;Application.ServletTestClient.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.webPractice [clean].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 11.0.6.executor&quot;: &quot;Run&quot;,
@@ -80,7 +77,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServletTestClient">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.6">
     <configuration name="ServletTestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javarush.servlets.ServletTestClient" />
       <module name="webPractice" />
@@ -206,6 +203,8 @@
       <workItem from="1750627407626" duration="2281000" />
       <workItem from="1750629705846" duration="131000" />
       <workItem from="1750629843910" duration="335000" />
+      <workItem from="1750630187142" duration="500000" />
+      <workItem from="1750672193355" duration="4655000" />
     </task>
     <servers />
   </component>
