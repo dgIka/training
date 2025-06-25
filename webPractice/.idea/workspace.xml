@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b105d5c-22b5-48f0-8973-d40b2a7e13dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/CalcSumServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/SubmitServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/WelcomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javarush/servlets/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javarush/servlets/CalculatorServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -206,11 +207,23 @@
       <workItem from="1750629843910" duration="335000" />
       <workItem from="1750630187142" duration="500000" />
       <workItem from="1750672193355" duration="7208000" />
-      <workItem from="1750766106220" duration="15080000" />
+      <workItem from="1750766106220" duration="18635000" />
+      <workItem from="1750850577964" duration="1335000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
