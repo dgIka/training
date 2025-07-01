@@ -10,8 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b105d5c-22b5-48f0-8973-d40b2a7e13dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +63,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.HeapSizeExample.executor": "Run",
     "Application.ServletTestClient.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.webPractice [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 11.0.6.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -85,7 +92,20 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.6">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernatepractice.App" />
+      <module name="webPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatepractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HeapSizeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javarush.memory.HeapSizeExample" />
       <module name="webPractice" />
@@ -201,6 +221,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.HeapSizeExample" />
         <item itemvalue="Application.ServletTestClient" />
       </list>
@@ -232,7 +253,10 @@
       <workItem from="1750930519370" duration="14489000" />
       <workItem from="1751019564598" duration="6585000" />
       <workItem from="1751114628811" duration="632000" />
-      <workItem from="1751318791060" duration="122000" />
+      <workItem from="1751318791060" duration="788000" />
+      <workItem from="1751373229445" duration="5571000" />
+      <workItem from="1751381089679" duration="192000" />
+      <workItem from="1751381288555" duration="8156000" />
     </task>
     <servers />
   </component>

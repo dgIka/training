@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G</Grants>
-      <IntrospectionStateNumber>1972</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1976</IntrospectionStateNumber>
       <ServerVersion>17.4</ServerVersion>
       <StartupTime>1750880301</StartupTime>
       <TimeZones>true ACDT
@@ -812,7 +804,7 @@ false Zulu
 14650||10|C|G
 14650||-9223372036854775808|U|G
 14650||10|U|G</Grants>
-      <IntrospectionStateNumber>1972</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1976</IntrospectionStateNumber>
       <ObjectId>24732</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4243,52 +4235,62 @@ false Zulu
     <schema id="267" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1972</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-06-30.21:28:32</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>1976</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-07-01.22:25:41</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <table id="268" parent="267" name="person">
-      <ObjectId>24733</ObjectId>
-      <StateNumber>1969</StateNumber>
+    <sequence id="268" parent="267" name="person_id_seq">
+      <ObjectId>24738</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>1975</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="269" parent="267" name="person">
+      <ObjectId>24739</ObjectId>
+      <StateNumber>1975</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="269" parent="268" name="id">
+    <column id="270" parent="269" name="id">
+      <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1969</StateNumber>
+      <StateNumber>1975</StateNumber>
       <StoredType>integer|0s</StoredType>
+      <SequenceId>24738</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="270" parent="268" name="name">
+    <column id="271" parent="269" name="name">
       <Position>2</Position>
-      <StateNumber>1969</StateNumber>
-      <StoredType>varchar(100)|0s</StoredType>
+      <StateNumber>1975</StateNumber>
+      <StoredType>varchar|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="271" parent="268" name="age">
+    <column id="272" parent="269" name="age">
       <Position>3</Position>
-      <StateNumber>1969</StateNumber>
+      <StateNumber>1975</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="272" parent="268" name="person_pkey">
+    <index id="273" parent="269" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24736</ObjectId>
+      <ObjectId>24744</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1969</StateNumber>
+      <StateNumber>1975</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="273" parent="268" name="person_pkey">
+    <key id="274" parent="269" name="person_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24737</ObjectId>
+      <ObjectId>24745</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1969</StateNumber>
-      <UnderlyingIndexId>24736</UnderlyingIndexId>
+      <StateNumber>1975</StateNumber>
+      <UnderlyingIndexId>24744</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
