@@ -10,9 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b105d5c-22b5-48f0-8973-d40b2a7e13dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50864c3f-8426-4c4c-97c5-65dde80d0de7/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernatepractice/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/App2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernatepractice/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +65,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.App2.executor": "Run",
+    "Application.App3.executor": "Run",
     "Application.HeapSizeExample.executor": "Run",
     "Application.ServletTestClient.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -90,7 +94,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App2">
+  <component name="RunManager" selected="Application.App3">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hibernatepractice.App" />
       <module name="webPractice" />
@@ -106,6 +110,19 @@
     </configuration>
     <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hibernatepractice.App2" />
+      <module name="webPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernatepractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernatepractice.App3" />
       <module name="webPractice" />
       <extension name="coverage">
         <pattern>
@@ -232,6 +249,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App3" />
         <item itemvalue="Application.App2" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.HeapSizeExample" />
@@ -273,7 +291,8 @@
       <workItem from="1751453421177" duration="14667000" />
       <workItem from="1751532552662" duration="17136000" />
       <workItem from="1751577517718" duration="1896000" />
-      <workItem from="1751615928063" duration="19763000" />
+      <workItem from="1751615928063" duration="20363000" />
+      <workItem from="1751711419708" duration="11683000" />
     </task>
     <servers />
   </component>

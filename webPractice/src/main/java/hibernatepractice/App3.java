@@ -9,11 +9,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class App2 {
+public class App3 {
     public static void main(String[] args) {
         Configuration cfg = new Configuration()
                 .addAnnotatedClass(Person.class)
-                .addAnnotatedClass(Item.class);
+                .addAnnotatedClass(Item.class)
+                .addAnnotatedClass(Passport.class);
 
         SessionFactory sf = cfg.buildSessionFactory();
         Session session = sf.getCurrentSession();
@@ -21,8 +22,8 @@ public class App2 {
         try {
             session.beginTransaction();
 
-            Person person = new Person("Test cascading", 30);
-            session.persist(person);
+            Person person = session.get(Person.class, 1);
+            session.remove(person);
 
 
             session.getTransaction().commit();
