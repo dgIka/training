@@ -1,32 +1,42 @@
 package hibernatepractice.model;
 
+
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "movie")
 public class Movie {
 
+    @ManyToMany(mappedBy = "movies")
+    private List<Actor> actors;
+
+    public List<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(List<Actor> actors) {
+        this.actors = actors;
+    }
+
     @Id
-    @Column(name = "movie_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "director_id", referencedColumnName = "director_id")
-    private SDirector director;
-
     @Column(name = "year_of_production")
     private int year;
 
-    public Movie() {
-    }
+    public Movie() {}
 
-    public Movie(String name, SDirector director, int year) {
+    public Movie(String name, int year) {
         this.name = name;
-        this.director = director;
         this.year = year;
     }
 
@@ -38,11 +48,6 @@ public class Movie {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return this.name + " " + this.director + " " + this.year;
-    }
-
     public String getName() {
         return name;
     }
@@ -51,19 +56,28 @@ public class Movie {
         this.name = name;
     }
 
-    public SDirector getDirector() {
-        return director;
-    }
-
-    public void setDirector(SDirector director) {
-        this.director = director;
-    }
-
     public int getYear() {
         return year;
     }
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie [id=" + id + ", name=" + name + ", year=" + year + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Movie movie = (Movie) o;
+        return id == movie.id && year == movie.year && Objects.equals(name, movie.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, year);
     }
 }
