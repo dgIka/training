@@ -14,7 +14,7 @@ public class School {
 
 
     @Column(name = "school_number")
-    private String schoolNumber;
+    private int schoolNumber;
 
 
     @OneToOne
@@ -30,11 +30,11 @@ public class School {
     }
 
 
-    public String getSchoolNumber() {
+    public int getSchoolNumber() {
         return schoolNumber;
     }
 
-    public void setSchoolNumber(String schoolNumber) {
+    public void setSchoolNumber(int schoolNumber) {
         this.schoolNumber = schoolNumber;
     }
 
@@ -44,6 +44,14 @@ public class School {
 
     public void setDirector(SDirector director) {
         this.director = director;
+    }
+
+    public School(int schoolNumber, SDirector director) {
+        this.schoolNumber = schoolNumber;
+        this.director = director;
+    }
+
+    public School() {
     }
 
     @Override

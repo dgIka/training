@@ -16,7 +16,7 @@ public class Movie {
 
     @ManyToOne
     @JoinColumn(name = "director_id", referencedColumnName = "director_id")
-    private Director director;
+    private SDirector director;
 
     @Column(name = "year_of_production")
     private int year;
@@ -24,7 +24,7 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(String name, Director director, int year) {
+    public Movie(String name, SDirector director, int year) {
         this.name = name;
         this.director = director;
         this.year = year;
@@ -51,11 +51,11 @@ public class Movie {
         this.name = name;
     }
 
-    public Director getDirector() {
+    public SDirector getDirector() {
         return director;
     }
 
-    public void setDirector(Director director) {
+    public void setDirector(SDirector director) {
         this.director = director;
     }
 

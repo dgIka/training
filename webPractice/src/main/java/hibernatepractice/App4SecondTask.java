@@ -18,9 +18,11 @@ public class App4SecondTask {
         try{
             session.beginTransaction();
 
-            SDirector sDirector = session.get(SDirector.class, 1);
-            System.out.println(sDirector);
-            System.out.println(sDirector.getSchool());
+
+            SDirector sDirector = session.get(SDirector.class, 2);
+            School school = session.get(School.class, 4);
+            school.setDirector(sDirector);
+
 
             session.getTransaction().commit();
         } finally {

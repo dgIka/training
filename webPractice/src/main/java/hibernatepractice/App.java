@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class App {
     public static void main(String[] args) {
         Configuration cfg = new Configuration().addAnnotatedClass(Person.class).addAnnotatedClass(Item.class)
-                .addAnnotatedClass(Director.class)
+                .addAnnotatedClass(SDirector.class)
                 .addAnnotatedClass(Movie.class);
 
         SessionFactory sf = cfg.buildSessionFactory();
@@ -58,12 +58,12 @@ public class App {
 //            session.update(director2);
 //            session.save(movie2);
 
-            Movie movie = session.get(Movie.class, 14);
-            Director director = movie.getDirector();
-            director.setMovies(Collections.singletonList(null));
-            movie.setDirector(session.get(Director.class, 4));
+//            Movie movie = session.get(Movie.class, 14);
+//            Director director = movie.getDirector();
+//            director.setMovies(Collections.singletonList(null));
+//            movie.setDirector(session.get(Director.class, 4));
 
-            session.update(movie);
+//            session.update(movie);
 
             session.getTransaction().commit();
 
