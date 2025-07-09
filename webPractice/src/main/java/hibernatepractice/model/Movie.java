@@ -11,7 +11,7 @@ import java.util.Objects;
 @Table(name = "movie")
 public class Movie {
 
-    @ManyToMany(mappedBy = "movies")
+    @ManyToMany(mappedBy = "movies", fetch = FetchType.EAGER)
     private List<Actor> actors;
 
     public List<Actor> getActors() {

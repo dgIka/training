@@ -17,15 +17,18 @@ public class App5 {
         SessionFactory sf = cfg.buildSessionFactory();
 
 
-        try (sf) {
+        try {
             Session session = sf.getCurrentSession();
             session.beginTransaction();
 
+            Movie movie = session.get(Movie.class, 1);
+            System.out.println("Получили фильм");
 
-            Actor actor = session.get(Actor.class, 2);
-            System.out.println(actor.getMovies());
+            movie.getActors().forEach(System.out::println);
 
             session.getTransaction().commit();
+        } finally {
+            sf.close();
         }
     }
 }
