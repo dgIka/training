@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b105d5c-22b5-48f0-8973-d40b2a7e13dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/concurrent/AtomicIntegerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/concurrent/collections/CollectionsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/concurrent/synchronizers/CyclicBarrierExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/concurrent/synchronizers/SemaphoreExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/locks/ReadWriteLockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javarush/locks/ReentrantLockExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +68,8 @@
     "Application.CollectionsExample.executor": "Run",
     "Application.CyclicBarrierExample.executor": "Run",
     "Application.HeapSizeExample.executor": "Run",
+    "Application.LockExample.executor": "Run",
+    "Application.ReadWriteLockExample.executor": "Run",
     "Application.SemaphoreExample.executor": "Run",
     "Application.ServletTestClient.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -98,33 +98,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CyclicBarrierExample">
-    <configuration name="App5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernatepractice.App5" />
-      <module name="webPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hibernatepractice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AtomicIntegerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javarush.concurrent.AtomicIntegerExample" />
-      <module name="webPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javarush.concurrent.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ReadWriteLockExample">
     <configuration name="CollectionsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javarush.concurrent.collections.CollectionsExample" />
       <module name="webPractice" />
@@ -144,6 +118,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="javarush.concurrent.synchronizers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javarush.locks.ReadWriteLockExample" />
+      <module name="webPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javarush.locks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReentrantLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javarush.locks.ReentrantLockExample" />
+      <module name="webPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javarush.locks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -253,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadWriteLockExample" />
+        <item itemvalue="Application.ReentrantLockExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.SemaphoreExample" />
         <item itemvalue="Application.CollectionsExample" />
-        <item itemvalue="Application.AtomicIntegerExample" />
-        <item itemvalue="Application.App5" />
       </list>
     </recent_temporary>
   </component>
@@ -302,6 +302,7 @@
       <workItem from="1751925467061" duration="2691000" />
       <workItem from="1751977675730" duration="7219000" />
       <workItem from="1752053364732" duration="13143000" />
+      <workItem from="1752146176584" duration="15678000" />
     </task>
     <servers />
   </component>
