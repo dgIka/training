@@ -3,13 +3,17 @@ package entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "person")
 public class Person {
 
+    @OneToOne(mappedBy = "person", cascade = CascadeType.ALL)
+    private Passport passport;
+
     @Id
-    @Column(name = "id")
+    @Column(name = "person_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
@@ -48,5 +52,23 @@ public class Person {
 
     public int getId() {
         return id;
+    }
+
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+        if (passport != null) {
+            passport.setPerson(this);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "passport=" + passport +
+                ", id=" + id +
+                ", first_name='" + first_name + '\'' +
+                ", second_name='" + second_name + '\'' +
+                ", birth_date=" + birth_date +
+                '}';
     }
 }
