@@ -33,4 +33,10 @@ public class Passport {
     public void setPerson(Person person) {
         this.person = person;
     }
+
+    @Override
+    public String toString() {
+        return "Passport" +
+                ", number =" + number;
+    }
 }

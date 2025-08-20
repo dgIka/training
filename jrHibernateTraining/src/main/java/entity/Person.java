@@ -63,12 +63,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "passport=" + passport +
-                ", id=" + id +
-                ", first_name='" + first_name + '\'' +
-                ", second_name='" + second_name + '\'' +
-                ", birth_date=" + birth_date +
-                '}';
+        return first_name + " " + second_name + " " + birth_date;
     }
+
+    public Passport getPassport() {
+        return passport;
+    }
+
+
 }

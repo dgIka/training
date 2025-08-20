@@ -7,6 +7,8 @@ import org.hibernate.cfg.Configuration;
 
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 
 public class HIbernateApp {
@@ -54,18 +56,27 @@ public class HIbernateApp {
 //            session.close();
 //        }
 
-//        try {
-//            HQLExample_1 hqlExample1 = new HQLExample_1(sf);
-//            hqlExample1.getAllUsers();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
         try {
             HQLExample_1 hqlExample1 = new HQLExample_1(sf);
-            hqlExample1.getPersonsName();
+            hqlExample1.getAllUsers();
+            hqlExample1.getAllUsersWithSorting();
+            hqlExample1.getPersonWithPassport();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+//        try {
+//            HQLExample_1 hqlExample1 = new HQLExample_1(sf);
+//            hqlExample1.getPersonsName();/
+//            hqlExample1.scrollFirstThreePersons();
+//            hqlExample1.getPersonById(15);
+//            ArrayList<String> names = new ArrayList<>();
+//            names.add("Todd");
+//            names.add("Dennis");
+//            names.add("Sara");
+//            hqlExample1.findPersonByUsernameList(names);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
